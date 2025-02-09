@@ -5,34 +5,86 @@
     android:orientation="vertical"
     android:padding="16dp">
 
-    <Button
-        android:id="@+id/button_mode"
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mode"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupMode"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Mode" />
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radioEco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/eco" />
+
+        <RadioButton
+            android:id="@+id/radioPower"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/power" />
+
+        <RadioButton
+            android:id="@+id/radioManual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/manual" />
+    </RadioGroup>
 
     <Button
         android:id="@+id/button_clean"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Clean" />
+        android:text="@string/clean" />
 
     <Button
         android:id="@+id/button_maintenance"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Maintenance" />
+        android:text="@string/maintenance" />
 
     <Button
         android:id="@+id/button_support"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Support" />
+        android:text="@string/support" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/preset"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupPreset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/presetClean"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/clean" />
+
+        <RadioButton
+            android:id="@+id/presetDeepClean"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/deep_clean" />
+    </RadioGroup>
 
     <Switch
         android:id="@+id/switch_power"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Power On/Off" />
+        android:text="@string/power_on_off" />
 
 </LinearLayout>

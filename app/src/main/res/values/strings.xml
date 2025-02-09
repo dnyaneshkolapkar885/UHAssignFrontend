@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">frontend</string>
+    <string name="mode">Mode</string>
+    <string name="clean">Clean</string>
+    <string name="maintenance">Maintenance</string>
+    <string name="support">Support</string>
+    <string name="power_on_off">Power On/Off</string>
+    <string name="eco">Eco</string>
+    <string name="power">Power</string>
+    <string name="manual">Manual</string>
+    <string name="preset">Preset</string>
+    <string name="deep_clean">Deep Clean</string>
 </resources>

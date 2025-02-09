@@ -7,6 +7,10 @@ android {
     namespace 'com.example.frontend'
     compileSdk 35
 
+    buildFeatures {
+        viewBinding = true
+    }
+
     defaultConfig {
         applicationId "com.example.frontend"
         minSdk 24
