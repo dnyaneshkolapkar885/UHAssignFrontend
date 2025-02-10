@@ -78,6 +78,8 @@ class MainActivity : AppCompatActivity() {
 
     private fun setupPowerButton() {
         binding.switchPower.setOnCheckedChangeListener { _, isChecked ->
+            val state = if(isChecked) "on" else "off"
+            Toast.makeText(this, "Turning $state device", Toast.LENGTH_SHORT).show()
             val request = createPostRequest("power", if (isChecked) "on" else "off")
             client.newCall(request).enqueue(object : Callback {
             override fun onFailure(call: Call, e: IOException) {
